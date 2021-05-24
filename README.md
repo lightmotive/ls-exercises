@@ -1,2 +1,3 @@
-# ls-exercises
-Launch School Exercises
+# Launch School Exercises
+
+Organized by section and chapter.
