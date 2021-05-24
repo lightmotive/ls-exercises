@@ -6,7 +6,7 @@
 
 a = 'Xyzzy'
 
-def my_value(b)
+def my_value(_b)
   b = 'yzzyX'
 end
 
@@ -16,3 +16,4 @@ puts a
 #   The = assignment operator does not mutate strings (b << '...' would).
 #   Furthermore, my_value doesn't use the argument passed;
 #     instead, it immediately assignes a new value to the enclosed b.
+# Learned rule: assigning an object to a variable never mutates the object.
