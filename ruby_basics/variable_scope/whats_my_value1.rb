@@ -11,4 +11,5 @@ end
 my_value(a)
 puts a
 # => 7
-#   my_value does not modify the variable passed to it; it simply returns the value + 10.
+#   Why? The method my_value does not mutate the variable passed to it.
+#   In Ruby, numbers are immutable.
