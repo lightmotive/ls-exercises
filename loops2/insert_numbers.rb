@@ -5,8 +5,13 @@
 
 numbers = []
 
+puts 'We need 5 numbers of your choice, please.'
+
 loop do
   puts 'Enter any number:'
-  input = gets.chomp.to_i
+  numbers.push(gets.chomp.to_i)
+  break if numbers.size == 5
 end
+
+puts 'Great, thanks! You entered:'
 puts numbers
