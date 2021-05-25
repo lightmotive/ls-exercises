@@ -1,3 +1,1 @@
-# Launch School Exercises
-
-Organized by section and chapter.
+# Launch School Exercises: Ruby Basics
