@@ -1,15 +1,19 @@
 # frozen_string_literal: true
 
+MASTER_USERNAME = 'admin'
 MASTER_PASSWORD = 'Test123'
 # Of course one would never store a password in any file stored in a repository or other easily accessible location.
 
-print 'Please enter your password: '
-
 loop do
-  password_input = gets.chomp
-  break if password_input == MASTER_PASSWORD
+  print 'Please enter your username: '
+  username = gets.chomp.downcase
 
-  print 'That was incorrect. Please try again: '
+  print 'And your password: '
+  password = gets.chomp
+
+  break if username == MASTER_USERNAME && password == MASTER_PASSWORD
+
+  puts "Authentication failed, please try again or hit Ctrl + C to quit.\n"
 end
 
 puts 'Welcome to the program!'
