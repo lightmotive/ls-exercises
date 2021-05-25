@@ -4,6 +4,6 @@
 
 numbers = []
 
-numbers.push(rand(100)) while numbers.size < 5
+numbers.push(rand(100)) while numbers.length < 5
 
 puts numbers
