@@ -2,9 +2,8 @@
 
 # Using a while loop, print 5 random numbers between 0 and 99.
 
-numbers = [27, 92, 16, 35, 10]
+numbers = []
 
-while numbers.length > 0
-  puts numbers.pop
-end
-# There are, of course, better ways to write that.
+numbers.push(rand(100)) while numbers.size < 5
+
+puts numbers
