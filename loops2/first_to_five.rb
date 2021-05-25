@@ -8,12 +8,14 @@
 
 number_a = 0
 number_b = 0
+limit = 5
 
 loop do
-  number_a += rand(2)
-  number_b += rand(2)
-  next if [number_a, number_b].include?(5)
+  if (number_a += rand(2)) == limit
+    puts "Number A reached #{limit} first!"
+  elsif (number_b += rand(2)) == limit
+    puts "Number B reached #{limit} first!"
+  end
 
-  puts '5 was reached!'
-  break
+  break if [number_a, number_b].include? 5
 end
