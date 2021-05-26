@@ -41,4 +41,4 @@ puts count_sheep
 # 10
 
 # Why? The first 5 lines are the same as the previous exercise.
-# 10 is output because count_sheep returns the value of the last expression in the method: 10.
+# 10 is output because count_sheep implicitly returns the value of the last expression in the method: 10.
