@@ -11,3 +11,12 @@ action = case stoplight
          end
 
 puts action
+
+# Convert case to if (for demonstration purposes)
+
+action = if stoplight == 'green' then 'Go!'
+         elsif stoplight == 'yellow' then 'Slow down!'
+         elsif stoplight == 'red' then 'Stop!'
+         end
+
+puts action
