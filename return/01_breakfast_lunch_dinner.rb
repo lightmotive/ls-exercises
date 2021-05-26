@@ -7,5 +7,5 @@ def meal
 end
 
 puts meal
-# => "Breakfast"
+# => Breakfast
 # meal explicitly returns the string "Breakfast", so that's what puts puts.
