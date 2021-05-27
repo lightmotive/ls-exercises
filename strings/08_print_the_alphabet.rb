@@ -11,3 +11,7 @@ puts "\nAlt 2:"
 
 puts "\nAlt 3 (perhaps less intuitive):"
 puts alphabet.split('')
+
+puts "\nAlt 4 (easy and intuitive!):"
+puts alphabet.chars
+# I missed that in the docs...will study over time!
