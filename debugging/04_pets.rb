@@ -6,6 +6,6 @@
 
 pets = { cat: 'fluffy', dog: %w[sparky fido], fish: 'oscar' }
 
-pets[:dog] = 'bowser'
+pets[:dog].push('bowser')
 
 p pets #=> {:cat=>"fluffy", :dog=>"bowser", :fish=>"oscar"}
