@@ -5,10 +5,9 @@
 
 numbers = [5, 2, 9, 6, 3, 1, 8]
 
-even_numbers = numbers.select do |n|
-  n if n.even?
-end
+even_numbers = numbers.select(&:even?)
 # The problem: map applies a transformation to each element of an array.
 # Fix: use the Array#select method instead.
+# While the previous code worked, n if n.even? did not communicate the correct intent.
 
 p even_numbers # expected output: [2, 6, 8]
