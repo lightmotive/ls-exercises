@@ -6,4 +6,9 @@ numbers = {
   low: 10
 }
 
+puts 'Exercise 5:'
 numbers.each { |k, v| puts "A #{k} number is #{v}." }
+
+puts "\nExercise 6:"
+half_numbers = numbers.map { |_k, v| v / 2 }
+p half_numbers
