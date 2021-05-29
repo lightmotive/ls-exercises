@@ -12,11 +12,7 @@ i = 0
 loop do
   break if i == colors.length
 
-  if i == 0
-    puts 'I have a ' + colors[i] + ' ' + things[i] + '.'
-  else
-    puts 'And a ' + colors[i] + ' ' + things[i] + '.'
-  end
+  puts "#{i.zero? ? 'I have a ' : 'And a '}#{colors[i]} #{things[i]}."
 
   i += 1
 end
