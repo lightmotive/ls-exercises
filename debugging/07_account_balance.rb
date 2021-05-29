@@ -36,7 +36,7 @@ def calculate_balance(month)
 end
 
 [january, february, march].each do |month|
-  balance = calculate_balance(month)
+  balance += calculate_balance(month)
 end
 
 # The problem: balance is not keeping a running total; it's just returning the last month's balance.
