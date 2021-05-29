@@ -5,3 +5,4 @@ car = { type: 'sedan',
         mileage: 80_000 }
 
 car[:year] = 2003
+car.delete(:mileage)
