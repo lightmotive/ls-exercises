@@ -8,8 +8,8 @@ end
 
 # Examples
 
-find_first_nonzero_among(0, 0, 1, 0, 2, 0)
-find_first_nonzero_among(1)
+puts find_first_nonzero_among([0, 0, 1, 0, 2, 0])
+puts find_first_nonzero_among([1])
 
 # Running that code raises this exception:
 # 01_reading_error_messages.rb:3:in `find_first_nonzero_among': wrong number of arguments (given 6, expected 1) (ArgumentError)
@@ -17,3 +17,4 @@ find_first_nonzero_among(1)
 
 # ...which indicates that the wrong number of arguments was passed to the find_first method on line 3 from line 11 in main.
 # Fix: Update line 11 to pass only 1 arg to find_first... method.
+# More specifically, it should pass a number array. Fix applied.
