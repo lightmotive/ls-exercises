@@ -5,7 +5,7 @@
 
 numbers = [5, 2, 9, 6, 3, 1, 8]
 
-even_numbers = numbers.map do |n|
+even_numbers = numbers.select do |n|
   n if n.even?
 end
 # The problem: map applies a transformation to each element of an array.
