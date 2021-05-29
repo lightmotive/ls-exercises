@@ -16,3 +16,8 @@ p half_numbers
 puts "\nExercise 7:"
 low_numbers = numbers.select { |_k, v| v < 25 }
 p low_numbers
+
+puts "\nExercise 8:"
+low_numbers = numbers.select! { |_k, v| v < 25 }
+p low_numbers
+p numbers
