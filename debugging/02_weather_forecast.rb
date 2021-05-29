@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def predict_weather
-  sunshine = ['true', 'false'].sample
+  sunshine = [true, false].sample
 
   if sunshine
     # This will always execute because sunshine is a string array that looks like booleans.
