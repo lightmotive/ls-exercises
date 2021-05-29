@@ -24,5 +24,5 @@ puts '"' + get_quote('Confucius') + '"'
 
 # The problem: there is no return statement in the first two if statements, so evaluation continues.
 # That error will occur unless the argument passed results in the last if statement being true.
-# The fix: use an explicit return for the first values
+# The fix: use an explicit return for the first two expressions.
 #   Also, if appropriate, use string interpolation to prevent the error entirely.
