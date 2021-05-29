@@ -6,7 +6,7 @@
 # When testing the method, you are surprised by a return value of 0. What's wrong with this code and how can you fix it?
 
 def digit_product(str_num)
-  digits = str_num.chars.map { |n| n.to_i }
+  digits = str_num.chars.map(&:to_i)
   product = 1
 
   digits.each do |digit|
