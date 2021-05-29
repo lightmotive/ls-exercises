@@ -18,7 +18,7 @@ character_classes = {
 puts 'Please type your class (warrior, thief, scout, mage):'
 input = gets.chomp.downcase
 
-player.merge(character_classes[input])
+player.merge!(character_classes[input.to_sym])
 
 puts 'Your character stats:'
 puts player
@@ -31,6 +31,11 @@ puts player
 #   Take the user's input (string) to select a character class.
 #   Merge the selected character class with the player's stats.
 
-# The obvious problem (without further debugging):
+# The obvious problems (after debugging):
 # - character_classes[input] returns nil because the hash contains only symbol keys; input is a string.
-# Fix: convert input to a symbol.
+# - player.merge does not modify player, but needs to.
+# Fixes:
+# - Convert input to a symbol.
+# - Use player.merge! to modify (mutate) player.
+
+# The program could be improved further with input validation.
